@@ -13,7 +13,7 @@ const FooterApp = () => {
                         <p className="mt-3 text-sm">
                             Cras ultricies mi eu turpis sit hendrerit fringilla vestibulum ante ipsum primis in faucibus ultrices posuere cubilia.
                         </p>
-                        <a href="https://instagram.com" className="mt-4 inline-flex items-center gap-2 text-gray-400 hover:text-white">
+                        <a href="#" className="mt-4 inline-flex items-center gap-2 text-gray-400 hover:text-white">
                             <TbBrandOauth size={18} /> Join Us In Authstream
                         </a>
                     </div>
@@ -44,22 +44,22 @@ const FooterApp = () => {
                         <h3 className="text-white text-lg font-semibold mb-3">Contact</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a href="https://instagram.com" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
+                                <a href="#" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
                                     <FaInstagram size={18} />    Instagram
                                 </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
+                                <a href="#" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
                                     <FaYoutube size={18} /> Youtube
                                 </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
+                                <a href="#" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
                                     <FaGithub size={18} />  Github
                                 </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
+                                <a href="#" className=" inline-flex items-center gap-2 text-gray-400 hover:text-white">
                                     <FaFacebook size={18} />  Facebook
                                 </a>
                             </li>

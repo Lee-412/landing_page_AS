@@ -1,0 +1,32 @@
+.contact_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    gap: 3rem;
+    margin-top: 3vh;
+}
+
+.contact_header {
+    text-align: center;
+}
+
+.contact_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .contact_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Chia 2 cột */
+        align-items: start;
+    }
+}
