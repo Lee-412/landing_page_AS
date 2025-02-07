@@ -1,5 +1,4 @@
 import "../styles/card.css";
-import { Button } from "../components/ui/button";
 
 interface DataCard {
   imageUrl: string;

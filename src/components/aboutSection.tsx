@@ -1,4 +1,4 @@
-import { Briefcase, CheckCircle, Settings, Star } from "lucide-react";
+import { Briefcase, Settings, Star } from "lucide-react";
 import { forwardRef } from "react";
 import { Button } from "../components/ui/button";
 import AboutCard from "./about_card";
