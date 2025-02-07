@@ -6,6 +6,7 @@ import HomeSection from "../components/homeSection";
 import AboutSection from "../components/aboutSection";
 import ServicesSection from "../components/servicesSection";
 import ContactSection from "../components/contactSection";
+import FooterApp from "../components/footer";
 
 
 export default function Home() {
@@ -16,14 +17,13 @@ export default function Home() {
     const contactRef = useRef<HTMLElement>(null);
 
     return (
-        <div>
+        <div className="">
             <Header sectionRefs={{ homeRef, aboutRef, servicesRef, contactRef }} />
-            <main>
-                <HomeSection ref={homeRef} />
-                <AboutSection ref={aboutRef} />
-                <ServicesSection ref={servicesRef} />
-                <ContactSection ref={contactRef} />
-            </main>
+            <HomeSection ref={homeRef} />
+            <AboutSection ref={aboutRef} />
+            <ServicesSection ref={servicesRef} />
+            <ContactSection ref={contactRef} />
+            <FooterApp />
         </div>
     );
 }

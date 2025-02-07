@@ -1,5 +1,4 @@
 // App.tsx
-import { useEffect, useState, useContext } from 'react';
 import './styles/App.css';
 import AppRouter from './route/AppRouter';
 
@@ -8,7 +7,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='w-dvw max-w-screen' >
       <AppRouter />
 
     </div>
