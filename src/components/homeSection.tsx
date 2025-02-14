@@ -3,6 +3,11 @@ import { Button } from "../components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const HomeSection = forwardRef<HTMLElement>((_, ref) => {
+  const handleClickGetStarted = () => {
+    window.open('http://103.237.147.55:7000/if/flow/default-authentication-flow/?next=%2Fif%2Fadmin%2F%23%2Fadministration%2Foverview', '_blank')
+
+  }
+
   return (
     <section
       ref={ref}
@@ -18,13 +23,15 @@ const HomeSection = forwardRef<HTMLElement>((_, ref) => {
           <h2 className="text-3xl md:text-4xl text-gray-900 mt-5">
             We Help You To Boost Your Business
           </h2>
-          <p className="text-lg mt-4 text-gray-500 leading-relaxed">
+          <p className="text-lg mt-4 text-gray-500 leading-relaxed ">
             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
             fugit, sed quia consequuntur magni dolores eos qui ratione.
           </p>
 
           <div className="mt-6">
-            <Button className="bg-blue-600 text-white hover:bg-blue-700 px-5 py-2.5 text-sm font-semibold rounded-md">
+            <Button className="bg-gray-600 text-white hover:bg-cyan-600 px-5 py-2.5 text-sm font-semibold hover:border-none"
+              onClick={handleClickGetStarted}
+            >
               Get Started <ArrowRight className="ml-2" size={16} />
             </Button>
           </div>

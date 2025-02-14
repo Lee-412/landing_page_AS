@@ -4,7 +4,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { cn } from "../lib/utils";
-import '../styles/header.css'
 const navLinks = [
     { name: "Home", refName: "homeRef" },
     { name: "About", refName: "aboutRef" },
@@ -39,6 +38,10 @@ export default function Header({ sectionRefs }: { sectionRefs: Record<string, Re
         setActiveSection(refName.replace("Ref", ""));
     };
 
+    const handleClickGetStart = () => {
+
+        window.open('http://103.237.147.55:7000/if/flow/default-authentication-flow/?next=%2Fif%2Fadmin%2F%23%2Fadministration%2Foverview', '_blank')
+    }
     return (
         <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
             <div className="container mx-auto flex justify-between items-center p-4">
@@ -50,8 +53,10 @@ export default function Header({ sectionRefs }: { sectionRefs: Record<string, Re
                             variant="ghost"
                             onClick={() => handleSmoothScroll(link.refName)}
                             className={cn(
-                                "px-4 py-2 transition text-gray-700 hover:text-blue-600 bg-white ",
+                                "px-4 py-2 transition text-gray-700 hover:text-blue-600 bg-white border-none",
                                 "focus:ring-0 focus:outline-none focus-visible:ring-0",
+                                "hover:border-none",
+                                "hover:shadow-md",
                                 activeSection === link.refName.replace("Ref", "") && "text-blue-600 font-semibold"
                             )}
                         >
@@ -60,10 +65,12 @@ export default function Header({ sectionRefs }: { sectionRefs: Record<string, Re
                     ))}
                 </nav>
                 <div className="hidden md:flex space-x-4">
-                    <Button variant="ghost">Sign In</Button>
-                    <Button>Get Started</Button>
+                    <Button onClick={handleClickGetStart}
+                        className="hover:border-none"
+
+                    >Get Started</Button>
                 </div>
             </div>
-        </header>
+        </header >
     );
 }

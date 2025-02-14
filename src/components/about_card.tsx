@@ -1,4 +1,3 @@
-import "../styles/card.css";
 
 interface DataCard {
   imageUrl: string;
