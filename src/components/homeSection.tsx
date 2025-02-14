@@ -13,7 +13,7 @@ const HomeSection = forwardRef<HTMLElement>((_, ref) => {
       ref={ref}
       id="home"
       className=" py-20 bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"
-      style={{ backgroundImage: "url('/public/card-top.jpg')" }}
+      style={{ backgroundImage: "url('/card-top.jpg')" }}
     >
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="text-left">
@@ -39,7 +39,7 @@ const HomeSection = forwardRef<HTMLElement>((_, ref) => {
 
         <div className="flex justify-center">
           <img
-            src="/public/card-top.jpg"
+            src="/card-top.jpg"
             alt="Business Boost"
             className="w-full max-w-md md:max-w-lg"
           />

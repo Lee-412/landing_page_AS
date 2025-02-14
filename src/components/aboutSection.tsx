@@ -6,14 +6,14 @@ import AboutCard from "./about_card";
 const AboutSection = forwardRef<HTMLElement>((_, ref) => {
   const cardData = [
     {
-      imageUrl: "/public/card-top.jpg",
+      imageUrl: "/card-top.jpg",
       title: "Product Development",
       description:
         "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni.",
       category: "Development",
     },
     {
-      imageUrl: "/public/card-top.jpg",
+      imageUrl: "/card-top.jpg",
       title: "Marketing Product",
       description:
         "Temporibus autem quibusdam a officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.",
